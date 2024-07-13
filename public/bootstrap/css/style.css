@@ -17,6 +17,8 @@
 body {
     font-family: "Roboto", sans-serif;
     margin: 0; /* Pastikan tidak ada margin default yang mempengaruhi posisi footer */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Gaya untuk tombol login dan signin */
@@ -65,4 +67,37 @@ h1 {
 .nav-item .nav-link.active {
     border-bottom: 1px solid transparent;
     animation: blink 1s infinite;
+}
+/* Untuk scrollbar di browser WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 6px; /* Lebar scrollbar */
+}
+
+/* Track (jalur) scrollbar */
+::-webkit-scrollbar-track {
+    background: #b6b6b6; /* Warna latar jalur scrollbar */
+}
+
+/* Handle (pegangan) scrollbar */
+::-webkit-scrollbar-thumb {
+    background: #ffc107; /* Warna pegangan scrollbar */
+    border-radius: 3px; /* Bentuk pegangan */
+}
+
+/* Handle saat dihover atau aktif */
+::-webkit-scrollbar-thumb:hover {
+    background: #ffcc00; /* Warna pegangan saat dihover */
+}
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efek sedikit melayang ketika disentuh */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
+}
+footer {
+    background-color: #f9f9f9;
+    color: #666; /* Warna teks yang kontras dengan latar belakang */
+    border-top: 2px solid #b6b6b6; /* Garis aksen di bagian atas footer */
 }
