@@ -19,6 +19,7 @@ body {
     margin: 0; /* Pastikan tidak ada margin default yang mempengaruhi posisi footer */
     display: flex;
     flex-direction: column;
+    background-color: #f9f9f9;
 }
 
 /* Gaya untuk tombol login dan signin */
@@ -94,8 +95,26 @@ h1 {
 
 .card:hover {
     transform: translateY(-5px); /* Efek sedikit melayang ketika disentuh */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
+    box-shadow: 0 4px 8px rgba(255, 204, 0, 0.5); /* Bayangan lembut */
 }
+/* Atur agar paragraf .description tersembunyi secara default */
+.card .description {
+    opacity: 0;
+    max-height: 0;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+    overflow: hidden;
+}
+
+.card:hover .description {
+    opacity: 1;
+    max-height: 100px; /* Sesuaikan sesuai kebutuhan Anda */
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit; /* Agar warna teks tidak berubah */
+}
+
 footer {
     background-color: #f9f9f9;
     color: #666; /* Warna teks yang kontras dengan latar belakang */

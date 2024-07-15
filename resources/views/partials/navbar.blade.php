@@ -1,4 +1,3 @@
- {{-- Navbar --}}
  <nav class="navbar navbar-expand-lg bg-white fixed-top">
   <div class="container">
     <a class="navbar-brand logo" href="/">
@@ -17,7 +16,7 @@
           <a class="nav-link {{ Request::is('about') ? 'active' : '' }}" href="/about">Tentang Kami</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{ Request::is('category') ? 'active' : '' }}" href="#">Kategori</a>
+          <a class="nav-link {{ Request::is('categories') ? 'active' : '' }}" href="/categories">Kategori</a>
         </li>
         <li class="nav-item">
           <a class="nav-link {{ Request::is('portfolio') ? 'active' : '' }}" href="#">Portofolio</a>
