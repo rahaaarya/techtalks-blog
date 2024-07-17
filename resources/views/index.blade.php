@@ -21,8 +21,7 @@
           </h5>
           <p class="card-text">{{ Str::limit($post->excerpt, 100) }}</p>
          <small class="float-end ">Author : 
-          <a class="text-decoration-none" href="#">{{ $post->user->name }}</a>
-         
+          <a class="text-decoration-none" href="/authors/{{ $post->author->username }}">{{ $post->author->name }}</a>
         </small>
         </div>
       </div>

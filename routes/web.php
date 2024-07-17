@@ -3,6 +3,7 @@
 use App\Http\Controllers\PostController;
 use App\Models\Category;
 use App\Models\Post;
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
 use function PHPUnit\Framework\returnSelf;
@@ -40,6 +41,12 @@ Route::get('/categories', function(){
         "categories" => Category::all()
        ]); 
     });
+Route::get('/authors/{author:username}', function (User $author){
+    return view('index', [
+        "title" => "Author Posts",
+        "posts" => $author->posts,
+    ]); 
+});
 
 
 
