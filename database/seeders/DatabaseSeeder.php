@@ -29,50 +29,50 @@ class DatabaseSeeder extends Seeder
         //     'password' => bcrypt('123'),
         // ]);
 
-        User::factory(5)->create();
-        Post::factory(20)->create();
+        // User::factory(5)->create();
+        Post::factory(3)->create();
 
-        Category::create([
-            'name' => 'Web Design',
-            'slug' => 'web-design',
-            'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates dolor inventore id eligendi aut necessitatibus, expedita aspernatur quod distinctio quasi.'
-        ]);
-        Category::create([
-            'name' => 'Web Development',
-            'slug' => 'web-development',
-            'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates dolor inventore id eligendi aut necessitatibus, expedita aspernatur quod distinctio quasi.'
-        ]);
-        Category::create([
-            'name' => 'Web Security',
-            'slug' => 'web-security',
-            'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates dolor inventore id eligendi aut necessitatibus, expedita aspernatur quod distinctio quasi.'
-        ]);
-        Category::create([
-            'name' => 'Hosting and Infrastructure',
-            'slug' => 'hosting-and-infrastructure',
-            'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates dolor inventore id eligendi aut necessitatibus, expedita aspernatur quod distinctio quasi.'
-        ]);
-        Category::create([
-            'name' => 'Tutorials and Guides',
-            'slug' => 'tutorials-and-guide',
-            'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates dolor inventore id eligendi aut necessitatibus, expedita aspernatur quod distinctio quasi.'
-          ]);
+        // Category::create([
+        //     'name' => 'Web Design',
+        //     'slug' => 'web-design',
+        //     'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates dolor inventore id eligendi aut necessitatibus, expedita aspernatur quod distinctio quasi.'
+        // ]);
+        // Category::create([
+        //     'name' => 'Web Development',
+        //     'slug' => 'web-development',
+        //     'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates dolor inventore id eligendi aut necessitatibus, expedita aspernatur quod distinctio quasi.'
+        // ]);
+        // Category::create([
+        //     'name' => 'Web Security',
+        //     'slug' => 'web-security',
+        //     'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates dolor inventore id eligendi aut necessitatibus, expedita aspernatur quod distinctio quasi.'
+        // ]);
+        // Category::create([
+        //     'name' => 'Hosting and Infrastructure',
+        //     'slug' => 'hosting-and-infrastructure',
+        //     'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates dolor inventore id eligendi aut necessitatibus, expedita aspernatur quod distinctio quasi.'
+        // ]);
+        // Category::create([
+        //     'name' => 'Tutorials and Guides',
+        //     'slug' => 'tutorials-and-guide',
+        //     'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates dolor inventore id eligendi aut necessitatibus, expedita aspernatur quod distinctio quasi.'
+        //   ]);
           
-          Category::create([
-            'name' => 'Trends and Emerging Technologies',
-            'slug' => 'trends-and-emrging-technologies',
-            'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates dolor inventore id eligendi aut necessitatibus, expedita aspernatur quod distinctio quasi.'
-          ]);
-          Category::create([
-            'name' => 'E-commerce and Online Business',
-            'slug' => 'e-commerce-and-online-business',
-            'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates dolor inventore id eligendi aut necessitatibus, expedita aspernatur quod distinctio quasi.'
-          ]);
-          Category::create([
-            'name' => 'User Experience',
-            'slug' => 'user-experience',
-            'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates dolor inventore id eligendi aut necessitatibus, expedita aspernatur quod distinctio quasi.'
-          ]);
+        //   Category::create([
+        //     'name' => 'Trends and Emerging Technologies',
+        //     'slug' => 'trends-and-emrging-technologies',
+        //     'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates dolor inventore id eligendi aut necessitatibus, expedita aspernatur quod distinctio quasi.'
+        //   ]);
+        //   Category::create([
+        //     'name' => 'E-commerce and Online Business',
+        //     'slug' => 'e-commerce-and-online-business',
+        //     'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates dolor inventore id eligendi aut necessitatibus, expedita aspernatur quod distinctio quasi.'
+        //   ]);
+        //   Category::create([
+        //     'name' => 'User Experience',
+        //     'slug' => 'user-experience',
+        //     'description' => 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates dolor inventore id eligendi aut necessitatibus, expedita aspernatur quod distinctio quasi.'
+        //   ]);
            
 
         //   Post::create([

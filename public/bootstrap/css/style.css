@@ -1,5 +1,4 @@
-/* Di dalam file style.css */
-
+/* General styles */
 @font-face {
     font-family: "Roboto";
     src: url("../fonts/Roboto-Regular.ttf") format("truetype");
@@ -16,13 +15,12 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    margin: 0; /* Pastikan tidak ada margin default yang mempengaruhi posisi footer */
+    margin: 0;
     display: flex;
     flex-direction: column;
     background-color: #f9f9f9;
 }
 
-/* Gaya untuk tombol login dan signin */
 .login,
 .signin {
     border-radius: 30px;
@@ -33,7 +31,7 @@ body {
 }
 
 .login {
-    background-color: #ffff;
+    background-color: #fff;
 }
 
 .login:hover {
@@ -69,54 +67,85 @@ h1 {
     border-bottom: 1px solid transparent;
     animation: blink 1s infinite;
 }
-/* Untuk scrollbar di browser WebKit (Chrome, Safari) */
+
 ::-webkit-scrollbar {
-    width: 6px; /* Lebar scrollbar */
+    width: 6px;
 }
 
-/* Track (jalur) scrollbar */
 ::-webkit-scrollbar-track {
-    background: #b6b6b6; /* Warna latar jalur scrollbar */
+    background: #b6b6b6;
 }
 
-/* Handle (pegangan) scrollbar */
 ::-webkit-scrollbar-thumb {
-    background: #ffc107; /* Warna pegangan scrollbar */
-    border-radius: 3px; /* Bentuk pegangan */
+    background: #ffc107;
+    border-radius: 3px;
 }
 
-/* Handle saat dihover atau aktif */
 ::-webkit-scrollbar-thumb:hover {
-    background: #ffcc00; /* Warna pegangan saat dihover */
+    background: #ffcc00;
 }
+
 .card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px); /* Efek sedikit melayang ketika disentuh */
-    box-shadow: 0 4px 8px rgba(255, 204, 0, 0.5); /* Bayangan lembut */
-}
-/* Atur agar paragraf .description tersembunyi secara default */
-.card .description {
-    opacity: 0;
-    max-height: 0;
-    transition: opacity 0.5s ease, max-height 0.5s ease;
-    overflow: hidden;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(255, 204, 0, 0.5);
 }
 
-.card:hover .description {
-    opacity: 1;
-    max-height: 100px; /* Sesuaikan sesuai kebutuhan Anda */
+/* Always show description on mobile and tablet */
+@media (max-width: 768px) {
+    .carousel-img {
+        height: 300px;
+        object-fit: cover;
+    }
+    .carousel-nav-icon {
+        font-size: 2em;
+    }
+    .card .description {
+        opacity: 1;
+        max-height: 100px;
+    }
 }
 
-.card-link {
-    text-decoration: none;
-    color: inherit; /* Agar warna teks tidak berubah */
+/* Desktop hover effect */
+@media (min-width: 769px) {
+    .card .description {
+        opacity: 0;
+        max-height: 0;
+        transition: opacity 0.5s ease, max-height 0.5s ease;
+        overflow: hidden;
+    }
+
+    .card:hover .description {
+        opacity: 1;
+        max-height: 100px;
+    }
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption h4,
+.carousel-caption p,
+.carousel-caption small {
+    color: white;
+    margin: 0;
+    padding: 0 15px;
+}
+
+.carousel-item img {
+    filter: brightness(80%) contrast(100%);
 }
 
 footer {
     background-color: #f9f9f9;
-    color: #666; /* Warna teks yang kontras dengan latar belakang */
-    border-top: 2px solid #b6b6b6; /* Garis aksen di bagian atas footer */
+    color: #666;
+    border-top: 2px solid #b6b6b6;
 }
